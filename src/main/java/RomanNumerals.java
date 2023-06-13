@@ -8,22 +8,23 @@ public class RomanNumerals {
         String output = "";
 
         if(inputNumber == 20) {
-            output = X + X;
+            int count = inputNumber / 10;
+            output = X.repeat(count);
+        }
+        if (inputNumber == 10) {
+            int count = inputNumber / 10;
+            output = X.repeat(count);
         }
         if(inputNumber < 19 && inputNumber > 15) {
             int count = inputNumber - 10 - 5;
             output = X + V + I.repeat(count);
         }
-
         if(inputNumber == 15) {
             output = X + V;
         }
         if (inputNumber > 10 && inputNumber < 14) {
             int variable = inputNumber - 10;
             output = X + I.repeat(variable);
-        }
-        if (inputNumber == 10) {
-            output = X;
         }
         if (inputNumber < 10 && inputNumber > 5) {
             int numberOfIs = inputNumber - 5;
