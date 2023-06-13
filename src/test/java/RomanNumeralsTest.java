@@ -25,7 +25,8 @@ public class RomanNumeralsTest {
             "16, XVI",
             "17, XVII",
             "18, XVIII",
-            "20, XX"
+            "20, XX",
+            "30, XXX"
     })
     void should_return_III_when_3_given(int inputNumber, String expectedOutput) {
         RomanNumerals romanNumerals = new RomanNumerals();

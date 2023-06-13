@@ -6,15 +6,15 @@ public class RomanNumerals {
 
     public String convert(int inputNumber) {
         String output = "";
-
-        if(inputNumber == 20) {
-            int count = inputNumber / 10;
-            output = X.repeat(count);
+        if(inputNumber == 30 || inputNumber == 20 || inputNumber == 10) {
+            output = getOutputForMultipleX(inputNumber);
         }
-        if (inputNumber == 10) {
-            int count = inputNumber / 10;
-            output = X.repeat(count);
-        }
+//        if(inputNumber == 20) {
+//            output = getOutputForMultipleX(inputNumber);
+//        }
+//        if (inputNumber == 10) {
+//            output = getOutputForMultipleX(inputNumber);
+//        }
         if(inputNumber < 19 && inputNumber > 15) {
             int count = inputNumber - 10 - 5;
             output = X + V + I.repeat(count);
@@ -36,8 +36,11 @@ public class RomanNumerals {
         if (inputNumber < 5) {
             output = I.repeat(inputNumber);
         }
-
         return output;
+    }
+    private static String getOutputForMultipleX(int inputNumber) {
+        int count = inputNumber / 10;
+        return X.repeat(count);
     }
 
 }
