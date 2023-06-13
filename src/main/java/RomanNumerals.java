@@ -10,16 +10,7 @@ public class RomanNumerals {
         if(inputNumber == 20) {
             output = X + X;
         }
-
-        if(inputNumber == 18) {
-            int count = inputNumber - 10 - 5;
-            output = X + V + I.repeat(count);
-        }
-        if(inputNumber == 17) {
-            int count = inputNumber - 10 - 5;
-            output = X + V + I.repeat(count);
-        }
-        if(inputNumber == 16) {
+        if(inputNumber < 19 && inputNumber > 15) {
             int count = inputNumber - 10 - 5;
             output = X + V + I.repeat(count);
         }
