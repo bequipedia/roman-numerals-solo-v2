@@ -17,7 +17,10 @@ public class RomanNumeralsTest {
             "6, VI",
             "7, VII",
             "8, VIII",
-            "10, X"
+            "10, X",
+            "11, XI",
+            "12, XII",
+            "13, XIII"
     })
     void should_return_III_when_3_given(int inputNumber, String expectedOutput) {
         RomanNumerals romanNumerals = new RomanNumerals();

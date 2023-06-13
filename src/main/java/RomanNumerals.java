@@ -6,14 +6,18 @@ public class RomanNumerals {
 
     public String convert(int inputNumber) {
         String output = "";
-        if(inputNumber == 10) {
+        if (inputNumber > 10 && inputNumber < 14) {
+            int variable = inputNumber - 10;
+            output = X + I.repeat(variable);
+        }
+        if (inputNumber == 10) {
             output = X;
         }
-        if(inputNumber < 10 && inputNumber > 5) {
+        if (inputNumber < 10 && inputNumber > 5) {
             int numberOfIs = inputNumber - 5;
             output = V + I.repeat(numberOfIs);
         }
-        if(inputNumber == 5) {
+        if (inputNumber == 5) {
             output = V;
         }
         if (inputNumber < 5) {
