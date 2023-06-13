@@ -12,13 +12,16 @@ public class RomanNumerals {
         }
 
         if(inputNumber == 18) {
-            output = X + V + I + I + I;
+            int count = inputNumber - 10 - 5;
+            output = X + V + I.repeat(count);
         }
         if(inputNumber == 17) {
-            output = X + V + I + I;
+            int count = inputNumber - 10 - 5;
+            output = X + V + I.repeat(count);
         }
         if(inputNumber == 16) {
-            output = X + V + I;
+            int count = inputNumber - 10 - 5;
+            output = X + V + I.repeat(count);
         }
 
         if(inputNumber == 15) {
