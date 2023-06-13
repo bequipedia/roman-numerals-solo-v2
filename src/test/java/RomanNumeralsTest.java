@@ -14,6 +14,9 @@ public class RomanNumeralsTest {
             "2, II",
             "3, III",
             "5, V",
+            "6, VI",
+            "7, VII",
+            "8, VIII",
             "10, X"
     })
     void should_return_III_when_3_given(int inputNumber, String expectedOutput) {

@@ -9,6 +9,10 @@ public class RomanNumerals {
         if(inputNumber == 10) {
             output = X;
         }
+        if(inputNumber < 10 && inputNumber > 5) {
+            int numberOfIs = inputNumber - 5;
+            output = V + I.repeat(numberOfIs);
+        }
         if(inputNumber == 5) {
             output = V;
         }
@@ -18,4 +22,5 @@ public class RomanNumerals {
 
         return output;
     }
+
 }
